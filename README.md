@@ -421,7 +421,8 @@ Run the LiteLLM proxy as a production-ready componentized stack (gateway, backen
 [![Launch in AWS CloudShell](https://img.shields.io/badge/Launch-AWS_CloudShell-FF9900?logo=amazon-aws&logoColor=white)](https://console.aws.amazon.com/cloudshell/home) — opens an in-browser shell, already authenticated to your AWS account. Once inside, run:
 
 ```bash
-git clone https://github.com/BerriAI/litellm.git
+cd /tmp
+git clone --depth 1 https://github.com/BerriAI/litellm.git
 cd litellm/terraform/litellm/aws/examples/default
 cp terraform.tfvars.example terraform.tfvars   # edit region/tenant/env
 terraform init && terraform apply
